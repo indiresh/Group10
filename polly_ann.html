@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="REFRESH" content="60" />
+<!-- The meta tag above refreshes the page every 60 seconds -->
+<title>Oakland County Trails - Polly Ann Trail</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+
+var image1=new Image()
+image1.src="root/polly_ann/1.jpg"
+var image2=new Image()
+image2.src="root/polly_ann/2.jpg"
+var image3=new Image()
+image3.src="root/polly_ann/3.jpg"
+var image4=new Image()
+image4.src="root/polly_ann/4.jpg"
+var image5=new Image()
+image5.src="root/polly_ann/5.jpg"
+var image6=new Image()
+image6.src="root/polly_ann/6.jpg"
+var image7=new Image()
+image7.src="root/polly_ann/7.jpg"
+var image8=new Image()
+image8.src="root/polly_ann/8.jpg"
+var image9=new Image()
+image9.src="root/polly_ann/9.jpg"
+var image10=new Image()
+image10.src="root/polly_ann/10.jpg"
+var image11=new Image()
+image11.src="root/polly_ann/11.jpg"
+var image12=new Image()
+image12.src="root/polly_ann/12.jpg"
+//if we end up using many images, we'll need to igure out a way to use an array to retrieve and crete them
+</script>
+</head>
+
+<body class="site_background">
+
+<table width="80%" border="1" align="center" cellpadding="2">
+  <tr>
+    <th class="header_logo" scope="col">A logo of some sort</th> <!--Use css file to implement logo -->
+    <th width="75%" align="center" class="header_title" scope="col">Oakland County Trails</th>
+    <th class="header_contact" scope="col"><a href="contact_us.html">questions?</a></th><!--I don't think you can do the same with CSS -->
+  </tr>
+  <tr>
+    <td colspan="3" class="toolbar_properties"><p><a href="index.html">Home</a> - <a href="Parks.html">Parks</a> - <a href="http://www.youtube.com/user/Halosapian">Youtube</a></p></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" class="left_column"><p class="website_track"><a href="index.html">Home</a> &gt; <a href="parks.html">Parks</a> &gt; <a href="Lake_Orion.html">Lake Orion</a> &gt;Polly Ann</p>
+      <p>Polly Ann Trail is an impressive feat. It is a multi-city multi-county effort rail to trail. Total Length is some more than 50 feet. Unfortunately, I know of no one who has ever done it. Why? Well, north of Oakland County, starting exactly at the Lapeer border, the trail is not maintained. That means it's barely recognizeable as a trail. In fact, some areas I would call more difficult than <a href="Pontiac_Lake.html">Pontiac Lake</a>. But, the Oakland County path is well maintained, with ~2/3 of it being paved. There is a water stop along the way at Oxford Frosty Boy. I enjoy this trail, as it's rather scenic. I've tried to include some high points in the picture reel. </p>
+    <p>As with the other extremely long paths, this one is split up. <br />
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/1I7mHNdKoIo" frameborder="0" allowfullscreen></iframe></p>
+    <p>Part 2:<br /><iframe width="560" height="315" src="http://www.youtube.com/embed/a0PI8lDpVcg" frameborder="0" allowfullscreen></iframe>
+    </p>
+    <p>Part 3:<br /><iframe width="560" height="315" src="http://www.youtube.com/embed/Jp7Qb-JObg4" frameborder="0" allowfullscreen></iframe>
+    </p>
+    <p>Click on the video for part 3. There is a comment from a fellow rider who's taken this path further than I ever could.       <br />
+    </p></td>
+    <td align="right" valign="top" class="right_column"><p><img src="root/polly_ann/1.jpg" name="slide" width=497 height=297>&nbsp;</p>
+    <p>Above: Photos of the trail. These are taken by me. </p>
+    <p>Below: A screenshot of the Google maps bike overlay. These are trails I rode and tracked with a GPS, then went into Google and created the layer. Layers are not embeddable, so clicking on the link will take you to Google maps.</p>
+    <p><a target="_blank" href="https://maps.google.com/?ll=42.814544,-83.152084&spn=0.262928,0.617294&t=h&z=11&lci=bike"><img src="root/polly_ann/bike_route.JPG" width="300" height="352" /></a></p>
+    <!-- Google won't let me embed a map with layers, so I screen shotted it and hyperlinked it -->
+    </td>
+  </tr>
+</table>
+<p class="bottom_of_page_text"><a href="site_map.html">Site Map</a> - <a href="contact_us.html">Contact Us </a>- <a href="http://www.youtube.com/user/Halosapian/videos?flow=grid&amp;view=0">Youtube link</a></p>
+<!-- I tried to be creative in putting these over here. It might look disorganized though. We could use Java script to make them float -->
+<script>
+<!--
+//variable that will increment through the images
+var step=1
+function slideit(){
+//if browser does not support the image object, exit.
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+//This could possibly use some fine tuning
+if (step<12)
+step++
+else
+step=1
+//call function "slideit()" every 2.5 seconds, change the 2500 to change the time
+setTimeout("slideit()",2500)
+}
+slideit()
+//-->
+</script>
+</body>
+</html>

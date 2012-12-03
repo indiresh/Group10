@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="REFRESH" content="60" />
+<!-- The meta tag above refreshes the page every 60 seconds -->
+<title>Oakland County Trails - Orion Oaks</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+
+var image1=new Image()
+image1.src="http://farm3.staticflickr.com/2348/2160864335_c83cc686cb.jpg"
+var image2=new Image()
+image2.src="root/orion_oaks/1.jpg"
+var image3=new Image()
+image3.src="root/orion_oaks/2.jpg"
+//if we end up using many images, we'll need to igure out a way to use an array to retrieve and crete them
+</script>
+</head>
+
+<body class="site_background">
+
+<table width="80%" border="1" align="center" cellpadding="2">
+  <tr>
+    <th class="header_logo" scope="col">A logo of some sort</th> <!--Use css file to implement logo -->
+    <th width="75%" align="center" class="header_title" scope="col">Oakland County Trails</th>
+    <th class="header_contact" scope="col"><a href="contact_us.html">questions?</a></th><!--I don't think you can do the same with CSS -->
+  </tr>
+  <tr>
+    <td colspan="3" class="toolbar_properties"><p><a href="index.html">Home</a> - <a href="Parks.html">Parks</a> - <a href="http://www.youtube.com/user/Halosapian">Youtube</a></p></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" class="left_column"><p class="website_track"><a href="index.html">Home</a> &gt; <a href="parks.html">Parks</a> &gt; <a href="Lake_Orion.html">Lake Orion</a> &gt;Orion Oaks</p>
+      <p>This is a bit of an anomaly in this site. I haven't been to Orion Oaks to ride a bike in roughly 15 years. From what I remember, and what I hear, there should be some fairly aggresive and scenic paths in there. It also houses a dog park, and bow hunting in the winter. </p>
+      <p><a href="http://www.destinationoakland.com/parksandtrails/parks/orionoaks/Pages/default.aspx">Orion Oaks website</a></p>
+    <p>Below: An embedded sample of Google maps. There are no bike trails yet. </p>
+    <p>
+      <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=42.759144,-83.297396&amp;spn=0.016448,0.038581&amp;t=h&amp;z=15&amp;output=embed"></iframe><br />
+      <small><a href="https://maps.google.com/?ie=UTF8&amp;ll=42.759144,-83.297396&amp;spn=0.016448,0.038581&amp;t=h&amp;z=15&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+    </p></td>
+    <td align="right" valign="top" class="right_column"><p><img src="http://farm3.staticflickr.com/2348/2160864335_c83cc686cb.jpg" name="slide" width=497 height=297>&nbsp;</p>
+   
+    <p>Above: Photos of the park.  </p>
+    <p></p>
+    <!-- Google won't let me embed a map with layers, so I screen shotted it and hyperlinked it -->
+    </td>
+  </tr>
+</table>
+<p class="bottom_of_page_text"><a href="site_map.html">Site Map</a> - <a href="contact_us.html">Contact Us </a>- <a href="http://www.youtube.com/user/Halosapian/videos?flow=grid&amp;view=0">Youtube link</a></p>
+<!-- I tried to be creative in putting these over here. It might look disorganized though. We could use Java script to make them float -->
+<script>
+<!--
+//variable that will increment through the images
+var step=1
+function slideit(){
+//if browser does not support the image object, exit.
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+if (step<3)
+step++
+else
+step=1
+//call function "slideit()" every 2.5 seconds, change the 2500 to change the time
+setTimeout("slideit()",2500)
+}
+slideit()
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="REFRESH" content="60" />
+<!-- The meta tag above refreshes the page every 60 seconds -->
+<title>Oakland County Trails - Paint Creek Trail</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+
+var image1=new Image()
+image1.src="root/paint_creek/1.jpg"
+var image2=new Image()
+image2.src="root/paint_creek/2.jpg"
+var image3=new Image()
+image3.src="root/paint_creek/3.jpg"
+//if we end up using many images, we'll need to igure out a way to use an array to retrieve and crete them
+</script>
+</head>
+
+<body class="site_background">
+
+<table width="80%" border="1" align="center" cellpadding="2">
+  <tr>
+    <th class="header_logo" scope="col">A logo of some sort</th> <!--Use css file to implement logo -->
+    <th width="75%" align="center" class="header_title" scope="col">Oakland County Trails</th>
+    <th class="header_contact" scope="col"><a href="contact_us.html">questions?</a></th><!--I don't think you can do the same with CSS -->
+  </tr>
+  <tr>
+    <td colspan="3" class="toolbar_properties"><p><a href="index.html">Home</a> - <a href="Parks.html">Parks</a> - <a href="http://www.youtube.com/user/Halosapian">Youtube</a></p></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" class="left_column"><p class="website_track"><a href="index.html">Home</a> &gt; <a href="parks.html">Parks</a> &gt; <a href="Rochester.html">Rochester</a> &gt;Paint Creek trail</p>
+      <p>Paint Creek deserves a special marking in my book. When I was young and impressionable, this trail implanted a tremendous sense of curiosity. &quot;If there is a 10 mile trail out here, what else could there be?!&quot; Not only that, it served as a good initial workout, from memory the first one I had ever had. Because of that and it's natural beauty, it's a special path for me. </p>
+    <p>Videos:<br />
+    Unfortunately, I have no clear videos of this path.      I've recorded it before, but my camera fogged up and the image became undesirable. </p>
+    <p>      However, since
+    we're on the topic of memorable trails, this is one that also helped me get started in biking. For 3 months straight, I was up at sunrise doing this ride. </p>
+    <p><iframe width="560" height="315" src="http://www.youtube.com/embed/l0HVaDaMzgc" frameborder="0" allowfullscreen></iframe></p>
+    <p><a href="http://www.paintcreektrail.org/">http://www.paintcreektrail.org/</a></p></td>
+    <td align="right" valign="top" class="right_column"><p><img src="root/paint_creek/1.jpg" name="slide" width=497 height=297>&nbsp;</p>
+    <p>Above: Photos of the park. Most of these are taken by me. </p>
+    <p>Below: A screenshot of the Google maps bike overlay. These are trails I rode and tracked with a GPS, then went into Google and created the layer. Layers are not embeddable, so clicking on the link will take you to Google maps.</p>
+    <p><a target="_blank" href="https://maps.google.com/?ll=42.7281,-83.159637&amp;spn=0.131648,0.308647&amp;t=h&amp;z=12&amp;lci=bike"><img src="root/paint_creek/bike_route.JPG" width="398" height="456" /></a></p>
+    <!-- Google won't let me embed a map with layers, so I screen shotted it and hyperlinked it -->
+    </td>
+  </tr>
+</table>
+<p class="bottom_of_page_text"><a href="site_map.html">Site Map</a> - <a href="contact_us.html">Contact Us </a>- <a href="http://www.youtube.com/user/Halosapian/videos?flow=grid&amp;view=0">Youtube link</a></p>
+<!-- I tried to be creative in putting these over here. It might look disorganized though. We could use Java script to make them float -->
+<script>
+<!--
+//variable that will increment through the images
+var step=1
+function slideit(){
+//if browser does not support the image object, exit.
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+if (step<3)
+step++
+else
+step=1
+//call function "slideit()" every 2.5 seconds, change the 2500 to change the time
+setTimeout("slideit()",2500)
+}
+slideit()
+//-->
+</script>
+</body>
+</html>

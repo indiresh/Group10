@@ -24,6 +24,7 @@
 	text-transform: uppercase;
 	color: #F60;
 	background-color: #09F;
+	background-image: none;
 }
 .toolbar_properties {
 	font-family: Arial, Helvetica, Verdana, sans-serif;

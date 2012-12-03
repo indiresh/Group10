@@ -2,12 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<META HTTP-EQUIV="REFRESH" CONTENT="60">
+<meta http-equiv="REFRESH" content="60" />
 <!-- The meta tag above refreshes the page every 60 seconds -->
-<title>Oakland County Trails</title>
+<title>Oakland County Trails - Clinton River</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
-<script language="JavaScript1.2" type="text/javascript">
-<!--
+<script type="text/javascript">
+
+var image1=new Image()
+image1.src="root/clinton_river/1.jpg"
+var image2=new Image()
+image2.src="root/clinton_river/2.jpg"
+var image3=new Image()
+image3.src="root/clinton_river/3.jpg"
+//if we end up using many images, we'll need to igure out a way to use an array to retrieve and crete them
 function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
@@ -24,12 +31,10 @@ function MM_preloadImages() { //v3.0
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
-//-->
 </script>
 </head>
 
-<body class="site_background">
+<body class="site_background" onload="MM_preloadImages('Untitled-2.fw.png','Page%201_r1_c1.png','Untitled-3.fw.png','Page%201_r1_c4.png');">
 
 <table width="80%" border="1" align="center">
   <tr>
@@ -75,24 +80,47 @@ function MM_preloadImages() { //v3.0
 </map></th> <!--Use css file to implement logo -->    <!--I don't think you can do the same with CSS -->
   </tr>
   <tr>
-    <td colspan="3" class="toolbar_properties"><a href="index.html">Home</a> - <a href="Parks.html">Parks</a> - <a href="http://www.youtube.com/user/Halosapian">Youtube</a></td>
+    <td colspan="2" class="toolbar_properties"><p><a href="index.html">Home</a> - <a href="Parks.html">Parks</a> - <a href="http://www.youtube.com/user/Halosapian">Youtube</a></p></td>
   </tr>
   <tr>
-    <td class="left_column">I tried to find a news ticker to go over here. I had no luck...<br />
-    I'll try again after work</td>
-    <td width="75%" class="home_page_text"><p><u>Website News:</u></p>
-      <p>I'll need you guys to implement something neat here. This is where we could use advanced software. Make it look like different entries. A few examples below:<br /><hr />
+    <td valign="top" class="left_column"><p class="website_track"><a href="index.html">Home</a> &gt; <a href="parks.html">Parks</a> &gt; <a href="Auburn_Hills.html">Auburn Hills</a> &gt; Clinton River trail</p>
+      <p>Clinton River Trail also deserves a special place. To date, I've set several personal bests on it. Since it extends onto Orchard-Macomb Trail, it's one of the longest trails in Michigan. Prior to riding on the Gaylord Mackinaw trail, this was the longest trail I've ever done. The last time I did it, I also set a personal speed record. 35 miles in about 1.5 hours(One way, I wasn't as fast on the way back).<br />
+        Clinton River trail itself starts on Opdyke, just south of the silver dome. It continues through Auburn Hills, Rochester, and many other small cities before heading into Macomb county. It too was a rail to trail. 
       </p>
-      <p>Today we have a video of me quickly lapping Mackinac Island. <br />
-      Entered on 11/14/12 by <em>Geoff Misiak </em></p>
-      <iframe width="560" height="315" src="http://www.youtube.com/embed/ZZ492frU_go" frameborder="0" allowfullscreen></iframe><hr />      Welcome to the new website! I hope you all enjoy it. Feel free to take this time to browse and explore. Let us know if you find anything interesting.<br />
-      Entered on 11/14/12 by <em>Geoff Misiak </em>
-    <p>&nbsp;</p></td>
-    <td class="right_column"><p>Let me know what you think of the colors for the backgrounds. </p>
-    <p>What should go over here?</p></td>
+      <p>Videos:<br />
+    Unfortunately, I have no clear videos of this path.      I've recorded it before, but my camera fogged up and the image became undesirable. I usually ride this in combination with Paint Creek trail, so no videos of either. </p>
+    <p>I do have quite a few pictures, but we'll need custom code to show them here. There is no way I'm hand declaring 1500 variables. </p>
+    <p><a href="http://www.clintonrivertrail.org/">http://www.clintonrivertrail.org/</a></p>
+    <p><a href="http://www.clintonrivertrail.org/PDFs/CRTMap2011LowRes%201.pdf">A very detailed map PDF</a></p></td>
+    <td align="right" valign="top" class="right_column"><p><img src="root/clinton_river/1.jpg" name="slide" width=448 height=327>&nbsp;</p>
+    <p>Above: Photos of the park. </p>
+    <p>Below: A screenshot of the Google maps bike overlay. These are trails I rode and tracked with a GPS, then went into Google and created the layer. Layers are not embeddable, so clicking on the link will take you to Google maps.</p>
+    <p><a target="_blank" href="https://maps.google.com/?ll=42.662999,-83.164101&amp;spn=0.131786,0.308647&amp;t=h&amp;z=12&amp;lci=bike"><img src="root/clinton_river/bike_route.JPG" width="497" height="246" /></a></p>
+    <!-- Google won't let me embed a map with layers, so I screen shotted it and hyperlinked it -->
+    </td>
   </tr>
 </table>
 <p class="bottom_of_page_text"><a href="site_map.html">Site Map</a> - <a href="contact_us.html">Contact Us </a>- <a href="http://www.youtube.com/user/Halosapian/videos?flow=grid&amp;view=0">Youtube link</a></p>
 <!-- I tried to be creative in putting these over here. It might look disorganized though. We could use Java script to make them float -->
+<script>
+<!--
+//variable that will increment through the images
+var step=1
+function slideit(){
+//if browser does not support the image object, exit.
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+if (step<3)
+step++
+else
+step=1
+//call function "slideit()" every 2.5 seconds, change the 2500 to change the time
+setTimeout("slideit()",2500)
+}
+slideit()
+//-->
+</script>
 </body>
 </html>
+
