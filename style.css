@@ -1,0 +1,58 @@
+@charset "utf-8";
+.header_title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	background-color: #09F;
+	word-spacing: normal;
+	color: #F60;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: uppercase;
+}
+.header_contact {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #09F;
+	color: #F60;
+	text-transform: uppercase;
+}
+.header_logo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #F60;
+	background-color: #09F;
+	background-image: none;
+}
+.toolbar_properties {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	background-color: #09F;
+}
+.home_page_text {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 14px;
+	background-color: #09F;
+}
+.bottom_of_page_text {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 10px;
+	text-align: right;
+	text-indent: 10%;
+}
+.site_background {
+	background-color: #3FC;
+}
+right_column {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	background-color: #09F;
+}
+.right_column {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	background-color: #09F;
+}
+.left_column {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	background-color: #09F;
+}
