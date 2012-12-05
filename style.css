@@ -51,8 +51,13 @@ right_column {
 .right_column {
 	font-family: Arial, Helvetica, Verdana, sans-serif;
 	background-color: #09F;
+	vertical-align: top;
 }
 .left_column {
 	font-family: Arial, Helvetica, Verdana, sans-serif;
 	background-color: #09F;
+	vertical-align: top;
+}
+.contact_class {
+	text-align: left;
 }
